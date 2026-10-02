@@ -1,0 +1,39 @@
+:root {
+  --bg: #FBF1E4;
+  --card: #FFFFFF;
+  --line: #EADBCD;
+  --stage: #F5DCC4;
+  --text: #3E3050;
+  --muted: #8C6E62;
+  --tomato: #EE6B55;
+  --tomato-text: #C9533F;
+  --font: 'Fredoka', system-ui, -apple-system, 'Segoe UI', sans-serif;
+}
+* { box-sizing: border-box; }
+html { background: var(--bg); }
+body { margin: 0; color: var(--text); background: var(--bg); font-family: var(--font); line-height: 1.6; -webkit-font-smoothing: antialiased; min-height: 100vh; }
+main { max-width: 680px; margin: 0 auto; padding: 36px 16px 72px; }
+.top { display: inline-flex; align-items: center; gap: 12px; text-decoration: none; color: var(--text); }
+.top img { width: 44px; height: auto; }
+.top span { font-weight: 600; font-size: 22px; }
+.hero { margin-top: 28px; background: var(--stage); border-radius: 28px; padding: 28px 24px 26px; }
+h1 { font-weight: 600; font-size: 40px; line-height: 1.12; margin: 0; }
+h1 em { font-style: normal; color: var(--tomato-text); }
+.lede { font-size: 18px; color: var(--muted); margin: 14px 0 0; }
+.meta { font-size: 13px; color: var(--muted); margin: 10px 0 0; }
+.badge { display: inline-block; margin-top: 20px; padding: 7px 16px; border-radius: 16px; background: var(--tomato); color: #FFF6EE; font-weight: 500; font-size: 13px; letter-spacing: 0.6px; }
+h2 { font-size: 14px; font-weight: 600; letter-spacing: 1.2px; text-transform: uppercase; color: var(--muted); margin: 40px 4px 12px; }
+.card { background: var(--card); border-radius: 22px; padding: 4px 22px; }
+.entry { padding: 18px 0; border-bottom: 1px solid var(--line); }
+.entry:last-child { border-bottom: 0; }
+.entry strong { display: block; font-weight: 600; font-size: 19px; margin-bottom: 6px; }
+.entry p, .entry ul, .entry ol { margin: 0; color: var(--muted); font-size: 16px; }
+.entry ul, .entry ol { padding-left: 20px; }
+.entry li + li { margin-top: 4px; }
+.entry p + p, .entry p + ul, .entry ul + p, .entry p + ol, .entry ol + p { margin-top: 8px; }
+.entry b { color: var(--text); font-weight: 500; }
+p { color: var(--muted); }
+a { color: var(--tomato-text); text-underline-offset: 3px; }
+footer { margin-top: 48px; padding: 18px 4px 0; border-top: 1px solid var(--line); font-size: 14px; color: var(--muted); }
+footer a { color: var(--muted); margin-right: 18px; }
+@media (max-width: 480px) { h1 { font-size: 32px; } .lede { font-size: 16.5px; } .hero { padding: 22px 18px; } .card { padding: 2px 18px; } }
